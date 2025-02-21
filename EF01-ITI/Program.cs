@@ -1,4 +1,5 @@
-﻿using EF01_ITI.Contexts;
+﻿using EF01_ITI.Configuration;
+using EF01_ITI.Contexts;
 using EF01_ITI.Entities;
 
 namespace EF01_ITI
@@ -54,8 +55,36 @@ namespace EF01_ITI
             //context.Add(topic); 
             #endregion
 
+            #region Read - Select
+            // Read - Select
 
-            context.SaveChanges();
+            //var course = context.courses.FirstOrDefault(C => C.Id == 1);
+            //Console.WriteLine(course.Name);
+
+            //var course_inst = context.course_Insts.FirstOrDefault(C => C.Ins_Id == 1);
+            //Console.WriteLine(course_inst.Evaluate);
+
+            //var department = context.departments.Where(D => D.Name == "floor");
+            //foreach (var item in department)
+            //{
+            //    Console.WriteLine(item.Name);
+            //}
+
+            //var stud_course = context.Student_Courses.FirstOrDefault(S => S.Stud_Id == 2);
+            //Console.WriteLine(stud_course.Course_Id);
+
+            //var student = context.Students.Where(S => S.Id == 1).Select(S => S.Address);
+            //foreach (var item in student)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //var topic = context.topics.FirstOrDefault(T => T.Id == 3);
+            //Console.WriteLine(topic.Name); 
+            #endregion
+
+
+            //context.SaveChanges();
 
         }
     }
