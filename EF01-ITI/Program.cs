@@ -37,7 +37,7 @@ namespace EF01_ITI
             //};
 
             //var course_ins = new Course_Inst() { Course_Id = 1, Evaluate = "dsf" };
-            //var department = new Department() { Name = "floor", Ins_Id= 1, Hiring_Date = DateTime.Now };
+            //var department = new Department() { Name = "floor", Ins_Id = 1, Hiring_Date = DateTime.Now };
             //var insturctor = new Instructor() { Name = "Ahmed ali", Address = "cairo", Bouns = 10, Dept_Id = 1, Houre_Rate = 10, Salary = 1000 };
             //var stud_course = new Stud_Course() { Course_Id = 1, Grade = 100 };
             //var topic = new Topic() { Name = "ORM" };
@@ -83,8 +83,29 @@ namespace EF01_ITI
             //Console.WriteLine(topic.Name); 
             #endregion
 
+            #region Update
+            // Update
+            //var student = context.Students.Where(S => S.Id == 1);
+            //foreach (var item in student)
+            //{
+            //    item.LName = "sayed";
+            //}
 
-            //context.SaveChanges();
+            //var course = context.courses.Where(s => s.Id == 1);
+            //foreach (var item in course)
+            //{
+            //    item.Top_Id = 2; 
+            //}
+
+            //var course_inst = context.course_Insts.Where(S => S.Ins_Id == 1);
+            //foreach (var item in course_inst)
+            //{
+            //    item.Evaluate = "allala";
+            //} 
+            #endregion
+
+
+            context.SaveChanges();
 
         }
     }
