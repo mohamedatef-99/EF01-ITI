@@ -104,8 +104,15 @@ namespace EF01_ITI
             //} 
             #endregion
 
+            #region Delete
+            // Delete
 
-            context.SaveChanges();
+            //var student = context.Students.FirstOrDefault(S => S.Id == 3);
+            //context.Students.Remove(student);
+
+            //context.SaveChanges(); 
+            #endregion
+
 
         }
     }
