@@ -10,6 +10,7 @@ namespace EF01_ITI
         {
             AppDBContext context = new AppDBContext();
 
+            #region CRUD Operations
             #region Create - Insert
             // Create - Insert
 
@@ -111,6 +112,7 @@ namespace EF01_ITI
             //context.Students.Remove(student);
 
             //context.SaveChanges(); 
+            #endregion 
             #endregion
 
 
